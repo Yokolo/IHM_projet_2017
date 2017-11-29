@@ -8,25 +8,25 @@
 
     <Switch
         android:id="@+id/switchLumiereCourante"
-        android:layout_width="350dp"
-        android:layout_height="26dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:text="Lumières pièce courante"
+        android:layout_marginTop="8dp"
+        android:text="@string/lumiereCourant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/switchLumiereGenerale"
-        android:layout_width="350dp"
-        android:layout_height="26dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="Lumières générales"
-        app:layout_constraintEnd_toEndOf="@+id/switchLumiereCourante"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/switchLumiereCourante"
+        android:layout_marginTop="8dp"
+        android:text="@string/lumiereGenerale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchLumiereCourante" />
 </android.support.constraint.ConstraintLayout>

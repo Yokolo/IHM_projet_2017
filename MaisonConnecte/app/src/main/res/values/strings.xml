@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MaisonConnectée</string>
+
+    <!-- Home page -->
+    <string name="homeLumiere">Lumière</string>
+    <string name="homeStores">Stores</string>
+    <string name="homeElectromenager">Electromenager</string>
+
+    <!-- Stores -->
+    <string name="storeCourant">Stores pièce courante</string>
+    <string name="storeGeneral">Stores toutes les pièces</string>
+
+    <!-- Lumière -->
+    <string name="lumiereCourant">Lumières pièce courante</string>
+    <string name="lumiereGenerale">Lumières générales</string>
+
 </resources>

@@ -11,11 +11,14 @@
         android:layout_width="368dp"
         android:layout_height="501dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="8dp">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,19 +27,20 @@
 
             <Button
                 android:id="@+id/bouttonLumiere"
-                android:layout_width="300dp"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="sendMessage"
-                android:text="Lumière"
+                android:text="@string/homeLumiere"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="219dp" />
 
             <Button
                 android:id="@+id/bouttonStores"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="storeLayout"
-                android:text="Stores"
+                android:text="@string/homeStores"
                 tools:layout_editor_absoluteX="20dp"
                 tools:layout_editor_absoluteY="195dp" />
 
@@ -44,7 +48,7 @@
                 android:id="@+id/ElectromenagerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Electromenager" />
+                android:text="@string/homeElectromenager" />
         </LinearLayout>
 
     </ScrollView>
