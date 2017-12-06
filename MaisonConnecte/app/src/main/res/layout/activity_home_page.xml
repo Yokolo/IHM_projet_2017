@@ -30,7 +30,7 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="sendMessage"
+                android:onClick="lumiereLayout"
                 android:text="@string/homeLumiere"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="219dp" />
@@ -45,10 +45,11 @@
                 tools:layout_editor_absoluteY="195dp" />
 
             <Button
-                android:id="@+id/ElectromenagerButton"
+                android:id="@+id/ChauffageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/homeElectromenager" />
+                android:onClick="chauffageLayout"
+                android:text="@string/homeChauffage" />
         </LinearLayout>
 
     </ScrollView>

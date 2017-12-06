@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">MaisonConnectée</string>
+    <string name="app_name">Maison Connectée</string>
 
     <!-- Home page -->
     <string name="homeLumiere">Lumière</string>
     <string name="homeStores">Stores</string>
-    <string name="homeElectromenager">Electromenager</string>
+    <string name="homeChauffage">Chauffage</string>
 
     <!-- Stores -->
     <string name="storeCourant">Stores pièce courante</string>
@@ -13,5 +13,10 @@
     <!-- Lumière -->
     <string name="lumiereCourant">Lumières pièce courante</string>
     <string name="lumiereGenerale">Lumières générales</string>
+
+    <!-- Chauffage -->
+    <string name="title_activity_chauffage">Maison Connectée</string>
+    <string name="chauffagePieceAVivre">Chauffage des pièces à vivre</string>
+    <string name="chauffageChambres">Chauffage des chambres</string>
 
 </resources>

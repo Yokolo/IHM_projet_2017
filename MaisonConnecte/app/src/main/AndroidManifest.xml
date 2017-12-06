@@ -16,21 +16,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LumiereActivity"
-            android:parentActivityName=".HomePage" >
+        <activity
+            android:name=".LumiereActivity"
+            android:parentActivityName=".HomePage">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomePage" />
         </activity>
-        <activity android:name=".StoreActivity"
-            android:parentActivityName=".HomePage" >
+        <activity
+            android:name=".StoreActivity"
+            android:parentActivityName=".HomePage">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
+        <activity
+            android:name=".chauffageActivity"
+            android:label="@string/title_activity_chauffage"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomePage" />
         </activity>
 
+        <activity android:name=".SettingChauffageActivity"
+            android:parentActivityName=".HomePage"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+
+        </activity>
     </application>
 
 </manifest>

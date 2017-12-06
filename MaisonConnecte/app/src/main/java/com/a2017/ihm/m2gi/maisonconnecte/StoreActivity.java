@@ -19,8 +19,6 @@ public class StoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_store);
 
         switchStoreCourant = findViewById(R.id.switchStoreCourant);
-        switchStoreGeneral = findViewById(R.id.switchStoreGeneral);
-
         switchStoreCourant.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -28,6 +26,7 @@ public class StoreActivity extends AppCompatActivity {
             }
         });
 
+        switchStoreGeneral = findViewById(R.id.switchStoreGeneral);
         switchStoreGeneral.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

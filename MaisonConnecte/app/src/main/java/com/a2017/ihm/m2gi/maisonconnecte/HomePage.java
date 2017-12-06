@@ -5,10 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Switch;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class HomePage extends AppCompatActivity {
 
@@ -22,12 +19,17 @@ public class HomePage extends AppCompatActivity {
         final Switch switchLumiereGenerale = findViewById(R.id.switchLumiereGenerale);
         Intent intent = new Intent(this, LumiereActivity.class);
     }
-    public void sendMessage(View view) {
+    public void lumiereLayout(View view) {
         Intent intent = new Intent(this, LumiereActivity.class);
         startActivity(intent);
     }
     public void storeLayout(View view) {
         Intent intent = new Intent(this, StoreActivity.class);
+        startActivity(intent);
+    }
+
+    public void chauffageLayout(View view) {
+        Intent intent = new Intent(this, chauffageActivity.class);
         startActivity(intent);
     }
 }
