@@ -18,5 +18,6 @@
     <string name="title_activity_chauffage">Maison Connectée</string>
     <string name="chauffagePieceAVivre">Chauffage des pièces à vivre</string>
     <string name="chauffageChambres">Chauffage des chambres</string>
+    <string name="title_activity_time_picker">TimePickerActivity</string>
 
 </resources>
