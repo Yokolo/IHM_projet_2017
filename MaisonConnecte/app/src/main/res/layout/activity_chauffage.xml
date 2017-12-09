@@ -22,4 +22,6 @@
 
     <include layout="@layout/content_chauffage" />
 
+    <include layout="@layout/activity_micro"/>
+
 </android.support.design.widget.CoordinatorLayout>
