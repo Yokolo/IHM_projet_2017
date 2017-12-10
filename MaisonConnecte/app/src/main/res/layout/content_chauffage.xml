@@ -8,6 +8,7 @@
     tools:context="com.a2017.ihm.m2gi.maisonconnecte.chauffageActivity"
     tools:showIn="@layout/activity_chauffage">
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
@@ -33,4 +34,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
 </android.support.constraint.ConstraintLayout>

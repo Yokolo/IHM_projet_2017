@@ -2,41 +2,48 @@ package com.a2017.ihm.m2gi.maisonconnecte;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class chauffageActivity extends AppCompatActivity {
+public class micro extends AppCompatActivity {
 
-    private FloatingActionButton speakButton;
     private String Action_String;
+    private FloatingActionButton speakButton;
     private final int REQ_CODE_SPEECH_INPUT = 100;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chauffage);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_micro);
 
         speakButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+
         speakButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Log.d("ta click !!!!!","salut");
-                askSpeechInput();
+                Log.d("ta click !!!!!",Action_String);
+                Log.v("CLICKED","");
+               askSpeechInput();
             }
         });
+
+
     }
+
+    // Showing google speech input dialog
+
     private void askSpeechInput() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
@@ -70,11 +77,5 @@ public class chauffageActivity extends AppCompatActivity {
             }
 
         }
-    }
-
-
-    public void settingLayout(View view) {
-        Intent intent = new Intent(this, TimePickerActivity.class);
-        startActivity(intent);
     }
 }
