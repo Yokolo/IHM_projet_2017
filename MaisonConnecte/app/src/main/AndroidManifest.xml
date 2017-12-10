@@ -44,13 +44,6 @@
                 android:value=".HomePage" />
         </activity>
         <activity
-            android:name=".SettingChauffageActivity"
-            android:parentActivityName=".HomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomePage" />
-        </activity>
-        <activity
             android:name=".TimePickerActivity"
             android:label="@string/title_activity_time_picker"
             android:theme="@style/AppTheme.NoActionBar"></activity>

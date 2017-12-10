@@ -18,6 +18,16 @@
     <string name="title_activity_chauffage">Maison Connectée</string>
     <string name="chauffagePieceAVivre">Chauffage des pièces à vivre</string>
     <string name="chauffageChambres">Chauffage des chambres</string>
-    <string name="title_activity_time_picker">TimePickerActivity</string>
+
+
+    <string name="title_activity_time_picker">Choix des plages horaires</string>
+    <string name="chauffageJournee">Journée</string>
+    <string name="chauffageSoiree">Soirée</string>
+    <string name="chauffageNuit">Nuit</string>
+
+    <string name="chauffageCelsius">°C</string>
+
+    <string name="chauffageDe">De : </string>
+    <string name="chauffageA">À : </string>
 
 </resources>
