@@ -1,5 +1,6 @@
 package com.a2017.ihm.m2gi.maisonconnecte;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import android.content.res.AssetManager;
@@ -209,13 +210,15 @@ public class ReconnaissanceGesteActivity extends AppCompatActivity implements Ca
             }
             else {
                 if(System.currentTimeMillis()-begin<5000){
-                    if(nbreco<7){
+                    if(nbreco<5){
                         Log.d("YEEEEEES","IMAGE PRESQUE DETECTE "+ Long.toString(System.currentTimeMillis()-begin));
                         nbreco++;
                     }
                     else {
                         Log.d("YEEEEEES","IMAGE DETECTE");
-                        System.exit(0);
+                        LumiereActivity.isLumiereCouranteOn = !LumiereActivity.isLumiereCouranteOn;
+                        Intent intent = new Intent(this, LumiereActivity.class);
+                        startActivity(intent);
                     }
                 }
                 else {

@@ -270,4 +270,9 @@ public class TimePickerActivity extends AppCompatActivity {
 
         }
     }
+
+    public void reconnaissanceGesteLayout(View view) {
+        Intent intent = new Intent(this, ReconnaissanceGesteActivity.class);
+        startActivity(intent);
+    }
 }

@@ -22,6 +22,7 @@
 
     <include layout="@layout/content_time_picker2" />
     <include layout="@layout/activity_micro" />
+    <include layout="@layout/activity_reconnaissance"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

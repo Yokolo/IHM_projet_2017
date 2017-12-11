@@ -96,4 +96,9 @@ public class StoreActivity extends AppCompatActivity {
         switchStoreCourant.setChecked(isStoreCourantOuvert);
         switchStoreGeneral.setChecked(isStoreGeneralOuvert);
     }
+
+    public void reconnaissanceGesteLayout(View view) {
+        Intent intent = new Intent(this, ReconnaissanceGesteActivity.class);
+        startActivity(intent);
+    }
 }
