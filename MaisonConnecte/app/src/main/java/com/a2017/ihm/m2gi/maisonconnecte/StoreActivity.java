@@ -46,7 +46,7 @@ public class StoreActivity extends AppCompatActivity {
                 isStoreGeneralOuvert = b;
             }
         });
-        speakButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        speakButton = findViewById(R.id.floatingActionButton);
         speakButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -87,7 +87,6 @@ public class StoreActivity extends AppCompatActivity {
                 }
                 break;
             }
-
         }
     }
 

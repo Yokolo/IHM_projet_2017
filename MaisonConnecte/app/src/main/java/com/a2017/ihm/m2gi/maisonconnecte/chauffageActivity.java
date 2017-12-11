@@ -77,4 +77,9 @@ public class chauffageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TimePickerActivity.class);
         startActivity(intent);
     }
+
+    public void settingLayout2(View view) {
+        Intent intent = new Intent(this, TimePickerActivity2.class);
+        startActivity(intent);
+    }
 }

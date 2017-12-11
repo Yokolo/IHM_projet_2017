@@ -34,6 +34,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomePage" />
         </activity>
+
         <activity
             android:name=".chauffageActivity"
             android:label="@string/title_activity_chauffage"
@@ -43,11 +44,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomePage" />
         </activity>
+
         <activity
             android:name=".TimePickerActivity"
             android:label="@string/title_activity_time_picker"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".micro"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".chauffageActivity"/>
+        <activity android:name=".micro" />
+
+        <activity
+            android:name=".TimePickerActivity2"
+            android:label="@string/title_activity_time_picker2"
+            android:parentActivityName=".chauffageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.a2017.ihm.m2gi.maisonconnecte.chauffageActivity" />
+        </activity>
+
     </application>
 
 </manifest>

@@ -15,12 +15,12 @@
     <string name="lumiereGenerale">Lumières générales</string>
 
     <!-- Chauffage -->
-    <string name="title_activity_chauffage">Maison Connectée</string>
+    <string name="title_activity_chauffage">Gestion chauffage</string>
     <string name="chauffagePieceAVivre">Chauffage des pièces à vivre</string>
     <string name="chauffageChambres">Chauffage des chambres</string>
 
 
-    <string name="title_activity_time_picker">Choix des plages horaires</string>
+    <string name="title_activity_time_picker">Chauffage pièces à vivre : paramètres</string>
     <string name="chauffageJournee">Journée</string>
     <string name="chauffageSoiree">Soirée</string>
     <string name="chauffageNuit">Nuit</string>
@@ -29,5 +29,8 @@
 
     <string name="chauffageDe">De : </string>
     <string name="chauffageA">À : </string>
+
+
+    <string name="title_activity_time_picker2">Chauffage chambres : paramètres</string>
 
 </resources>
