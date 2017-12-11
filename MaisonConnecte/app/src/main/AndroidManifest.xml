@@ -62,6 +62,29 @@
                 android:value="com.a2017.ihm.m2gi.maisonconnecte.chauffageActivity" />
         </activity>
 
+        <activity android:name=".ReconnaissanceGesteActivity"
+            android:parentActivityName=".HomePage" >
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
+
     </application>
 
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
 </manifest>

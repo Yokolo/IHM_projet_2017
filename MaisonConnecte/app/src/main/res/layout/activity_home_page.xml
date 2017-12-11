@@ -51,6 +51,15 @@
                 android:onClick="chauffageLayout"
                 android:text="@string/homeChauffage" />
 
+            <Button
+                android:id="@+id/ReconnaissanceGesteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="reconnaissanceGesteLayout"
+                android:text="Reconnaissance Geste"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="195dp" />
+
         </LinearLayout>
 
     </ScrollView>

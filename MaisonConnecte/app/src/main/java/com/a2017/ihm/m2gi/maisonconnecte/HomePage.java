@@ -86,4 +86,10 @@ public class HomePage extends AppCompatActivity {
         Intent intent = new Intent(this, chauffageActivity.class);
         startActivity(intent);
     }
+
+    public void reconnaissanceGesteLayout(View view) {
+        Intent intent = new Intent(this, ReconnaissanceGesteActivity.class);
+        startActivity(intent);
+    }
+
 }
