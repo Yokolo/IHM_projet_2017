@@ -264,6 +264,29 @@ public class TimePickerActivity2 extends AppCompatActivity {
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     Action_String = (result.get(0));
                     Log.d("ce que vous avez dit:", Action_String);
+                    Intent intent;
+                    switch (Action_String){
+                        case "éteindre la lumière" :
+                            LumiereActivity.isLumiereCouranteOn = false;
+                            intent = new Intent(this, LumiereActivity.class);
+                            startActivity(intent);
+                            break;
+                        case "allumer la lumière" :
+                            LumiereActivity.isLumiereCouranteOn = true;
+                            intent = new Intent(this, LumiereActivity.class);
+                            startActivity(intent);
+                            break;
+                        case "éteindre toutes les lumières" :
+                            LumiereActivity.isLumiereGeneraleOn = false;
+                            intent = new Intent(this, LumiereActivity.class);
+                            startActivity(intent);
+                            break;
+                        case "allumer toutes les lumières" :
+                            LumiereActivity.isLumiereGeneraleOn = true;
+                            intent = new Intent(this, LumiereActivity.class);
+                            startActivity(intent);
+                            break;
+                    }
                 }
                 break;
             }

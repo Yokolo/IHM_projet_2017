@@ -84,6 +84,20 @@ public class LumiereActivity extends AppCompatActivity {
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     Action_String = (result.get(0));
                     Log.d("ce que vous avez dit:", Action_String);
+                    switch (Action_String){
+                        case "éteindre la lumière" :
+                            LumiereActivity.isLumiereCouranteOn = false;
+                            break;
+                        case "allumer la lumière" :
+                            LumiereActivity.isLumiereCouranteOn = true;
+                            break;
+                        case "éteindre toutes les lumières" :
+                            LumiereActivity.isLumiereGeneraleOn = false;
+                            break;
+                        case "allumer toutes les lumières" :
+                            LumiereActivity.isLumiereGeneraleOn = true;
+                            break;
+                    }
                 }
                 break;
             }
